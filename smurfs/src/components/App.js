@@ -3,6 +3,7 @@ import {GlobalContext} from '../contexts/GlobalState';
 import axios from 'axios';
 import './App.css';
 import SmurfForm from './SmurfForm';
+import SmurfList from './SmurfList';
 
 const App = () => {
   const {fetchSuccess, fetchError} = useContext(GlobalContext);
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <div>
       <SmurfForm />
+      <SmurfList />
     </div>
   )
 }
